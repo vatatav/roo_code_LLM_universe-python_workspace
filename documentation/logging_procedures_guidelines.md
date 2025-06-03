@@ -43,8 +43,13 @@ Each distinct piece of work, interaction, or learning insight within a session i
     *   `[LOG_PREFIX]` is `ADL` or `UPL`.
     *   `YYYYMMDD` matches the `Session Start` date.
     *   `NNN` is a 3-digit sequential number for items within that session (e.g., 001, 002).
-*   `**Date Interval:** YYYY.MM.DD - YYYY.MM.DD`
-    *   Reflects the actual start and end dates of the activity described in this ItemID. This can span multiple days but should fall within the overall session's timeframe.
+*   `**Date Interval:** YYYY.MM.DD HH:MM - YYYY.MM.DD HH:MM` (veya tek bir zaman noktası için `YYYY.MM.DD HH:MM`, ya da saatler mevcut değilse/ilgili değilse `YYYY.MM.DD - YYYY.MM.DD`)
+    *   Reflects the actual start and end dates and times (when available and relevant) of the activity described in this ItemID.
+    *   This can span multiple days but should fall within the overall session's timeframe.
+    *   For new entries, if the interaction or task has a discernible start and end time (HH:MM), these should be included.
+    *   If only a single timestamp is relevant (e.g., a specific event), use `YYYY.MM.DD HH:MM`.
+    *   If specific times are not available (e.g., for some historical data) or if an item genuinely spans full days without precise start/end times for the logged activity itself, the `YYYY.MM.DD - YYYY.MM.DD` format can be used.
+    *   The goal is to provide as much temporal precision as is practical and useful for understanding the context of the logged item.
 
 ### 5.1. `llm_assisted_development_log.md` ItemID Specific Fields:
 

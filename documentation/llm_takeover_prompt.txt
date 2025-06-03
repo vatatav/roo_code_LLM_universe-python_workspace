@@ -1,0 +1,7 @@
+Hello,  
+
+I'd like to continue this software development project with your assistance. You will find all the necessary information and the steps you need to follow to take over the project and quickly get up to speed in the `documentation/llm_takeover_procedures.md` file.  
+
+Please carefully review this file first. It contains expectations for you during the project takeover, other important documents you need to read, and some initial information specific to our current session (such as date, working mode, LLM model). I have updated this information just before giving you this prompt.  
+
+Notify me when you are ready to take over the project by following the instructions in the `documentation/llm_takeover_procedures.md`
