@@ -1,7 +1,14 @@
-Hello,  
+Hello,
 
-I'd like to continue this software development project with your assistance. You will find all the necessary information and the steps you need to follow to take over the project and quickly get up to speed in the `documentation/llm_takeover_procedures.md` file.  
+You are to take over an ongoing Python project.
 
-Please carefully review this file first. It contains expectations for you during the project takeover, other important documents you need to read, and some initial information specific to our current session (such as date, working mode, LLM model). I have updated this information just before giving you this prompt.  
+First, you must process the takeover procedures outlined in this file:
+'python_workspace/documentation/llm_takeover_procedures.md'
 
-Notify me when you are ready to take over the project by following the instructions in the `documentation/llm_takeover_procedures.md`
+Second, use the following session-specific information to orient yourself:
+* **Session Start Date:** [User to fill: YYYY.MM.DD]
+* **Mode:** [User to fill: e.g., Gemini Web Interface]
+* **LLM Model Used:** [User to fill: e.g., Gemini 2.5 Pro (preview)]
+* **Previous LLM's Handover File Name:** [User to fill: e.g., python_workspace\history\handovers\HandOver_YYYYMMDD_Model_ID.md]
+
+After processing the procedures and the information above, please begin the takeover process as instructed in the procedures document.

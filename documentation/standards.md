@@ -40,6 +40,7 @@ Each project (e.g., `projects/financial_tracker/`) must have an internal structu
 ├── config.template.json  # Template for config.json
 └── README.md             # Project-specific explanations
 ```
+**Note on Archival/Historical Folders:** To keep the project workspace clean and focused on active development files, do not create additional `History` or `old` subdirectories within any project folder or the `python_workspace` root. This is a strict standard. All historical artifacts, old versions of files, or conversational logs should be stored in the dedicated `d:\AI_projects\roo_code_LLM_universe\old_files\` directory, which is outside the version-controlled workspace. Assisting LLMs should verify compliance with this standard during handovers.
 
 ### 3. Language and Naming Conventions
 

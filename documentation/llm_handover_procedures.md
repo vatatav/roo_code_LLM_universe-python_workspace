@@ -56,8 +56,20 @@ Compile a comprehensive **Draft Handover Report**. This report should include:
 2.  Clearly state that this is the proposed content for the official `HandOver` file.
 3.  **Outstanding User Actions Check:** Review if there are any pending actions the user was expected to perform during your tenure (e.g., file deletions, specific Git commands that you cannot execute) that have not been confirmed as completed. If so, gently remind the user and request confirmation or completion before asking for final handover approval.
 4.  Explicitly ask for the user's approval to proceed with creating the `HandOver` file and finalizing the handover, once any outstanding user actions are resolved.
+...
+### Step 4: Perform Final Standards Compliance Check
 
-### Step 4: Handle User's Decision
+* Before finalizing the handover, review all changes made during your tenure (e.g., new files created, code added to shared libraries) against the rules outlined in `documentation/standards.md`.
+* **If all changes are compliant:** Add a confirmation note to your final entry in `llm_assisted_development_log.md`, such as: *"Final compliance check passed. All new contributions align with `standards.md`."*
+* **If you identify any non-compliant changes:** You must not proceed with the handover blindly. Instead, you must:
+    1.  Report the specific deviation to the user.
+    2.  Ask the user how to proceed by offering two options:
+        * **Option A:** "Should we address and fix this compliance issue now, before I complete the handover?"
+        * **Option B:** "Should I document this non-compliance in the `HandOver` file as a priority task for the next LLM to address?"
+    3.  Proceed based on the user's decision.
+
+...
+### Step 5: Handle User's Decision
 
 #### A. If User APPROVES Handover:
 

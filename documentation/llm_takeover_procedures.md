@@ -4,52 +4,53 @@
 
 This document will guide you in taking over the current software development project. Our aim is to make this transition as smooth and efficient as possible.
 
-## 1. Initial Information (To Be Updated by User Before Each Handover)
+## 1. Initial User Prompt
 
-Below is essential information regarding this session and your role. Please take careful note of these details:
+You will be initiated with a prompt from the user that contains session-specific information (Session Start Date, Mode, LLM Model, and the path to the previous LLM's handover file) and points you to this document. You must use that session-specific information for context.
 
-*   **Session Start Date:** 2025.06.03
-*   **Mode:** CodeLLM - Agent
-*   **LLM Model Used:** Gemini 2.5 Pro
-*   **Previous LLM's Handover File Name:** python_workspace\history\handoevers\HandOver-20250603-VSCode-Extension-Agent.md
+## 2. Onboarding Procedure
 
-**Important Note:** I have updated the information above, especially the "Previous LLM's Handover File Name," just before providing you with this guide.
+Upon receiving the initial prompt from the user, you must perform the following steps in order:
 
-## 2. Required Reading to Understand the Project
+1.  **Acknowledge and Read Key Documents:**
+    * Acknowledge the user's request.
+    * Read and process this document (`llm_takeover_procedures.md`) in its entirety.
+    * Read and process all other core project documentation as listed in the "Required Reading" section below.
 
-To fully understand the project, please review the following resources in order:
+2.  **Verify Takeover Parameters:**
+    * Before proceeding, perform a sanity check on the session-specific information you received in the initial prompt from the user.
+    * Does the `Session Start Date` appear logical in sequence with the date of the file mentioned in `Previous LLM's Handover File Name`?
+    * Is the `Mode` or `LLM Model Used` a name that has appeared before in the project logs, or does it appear to be new?
+    * If you detect any potential inconsistencies (e.g., a date that seems out of order, a new model name that could be a typo), you **must** ask the user for clarification before proceeding. For example: *"I have noted the `LLM Model Used` is 'NewModel-X'. Is this a new model identifier we are now tracking, or could it be a typo?"*
 
-1.  **Core Project Documentation:**
-    *   All files within the `documentation/` folder (including this file). Pay special attention to `standards.md`, `project_lifecycle_guidelines.md`, `logging_procedures_guidelines.md`, `llm_handover_procedures.md`, and `history/progress/user_profile_for_llm_assistance.md`.
-2.  **Project and User Development History:**
-    *   All files within the `history/progress/` folder (e.g., `user_progress_log.md`, `llm_assisted_development_log.md`).
-    *   **Note:** This `history` folder and its contents have been added to `.gitignore`, meaning they are not tracked by Git. This ensures that logs are not lost during a potential Git rollback.
-3.  **Previous LLM's Handover Report:**
-    *   The previous LLM's handover file, located in the `history/handovers/` folder, as named in the "Initial Information" section above: `history/handovers/[PREVIOUS_HANDOVER_FILE_NAME]`
-    *   If this handover file mentions any other documents that require reading, please review them as well.
+3.  **Summarize Your Understanding:**
+    * After reviewing all required documents, prepare a summary of your understanding of the project's current status, completed work, ongoing tasks, and overall objectives.
+    * Present this summary to the user.
 
-## 3. Takeover Process and Your Responsibilities
+4.  **Propose a Continuation Plan:**
+    * Based on your analysis, outline how you plan to proceed and what your initial steps will be.
+    * Present this plan to the user for discussion and approval.
 
-1.  **Summarize Your Understanding:** After reviewing the resources above, prepare a summary of your understanding of the project's current status, completed work, ongoing tasks, and overall objectives. Also, outline how you plan to proceed and what your initial steps will be.
-2.  **Missing Information and Discrepancies:**
-    *   If you cannot access any resources, or if you notice any missing information or contradictions (e.g., if your takeover date appears to be before the creation date of the previous handover file, or if there's an unexpected change in mode or model names), please inform me so that the missing elements can be provided or the situation clarified.
-    *   Specifically, there should be logical consistency between the date in the previous handover file's name (the date that file was prepared) and your session start date.
-    *   If you see a new "Mode" or "LLM Model" name that has not been used before, please question whether it's a typo or a genuinely new definition.
-3.  **User Approval and Creation of "TakeOver" File:**
-    *   Once we agree on your summary and plan, you will create a `TakeOver` file to formally confirm that you have taken over the project, following the naming convention below:
-        *   **File Name Format:** `TakeOver_[TakeoverDateYYYYMMDD]_[YourMode]_[YourLLMModel].md`
-        *   **Example:** `TakeOver_20250603_CodeLLM-Agent_Gemini-2.5-Pro.md`
-        *   You should save this file in the `history/takeovers/` folder.
-        *   The content of this file should include the summary and continuation plan we agreed upon.
-4.  **Log Entries (During Takeover Phase):**
-    *   When creating the `TakeOver` file, remember to make log entries in `user_progress_log.md` and `llm_assisted_development_log.md` according to the formats specified in `documentation/logging_procedures_guidelines.md`, including "Project Takeover Preparation" and relevant details.
+5.  **Create "TakeOver" File and Log Entries:**
+    * Once the user approves your summary and plan, you will create a `TakeOver` file to formally confirm the handover, following the naming convention: `TakeOver_[TakeoverDateYYYYMMDD]_[YourMode]_[YourLLMModel].md`.
+    * This file should be saved in the `history/takeovers/` folder. Its content should be the summary and plan we agreed upon.
+    * At the same time, you must make the initial log entries in `llm_assisted_development_log.md` and `user_progress_log.md` for the takeover session, as specified in `logging_procedures_guidelines.md`.
+
+## 3. Required Reading to Understand the Project
+
+To fully understand the project, you must review the following resources:
+
+1.  **Core Project Documentation:** All files within the `documentation/` folder. Pay special attention to:
+    * `standards.md`
+    * `project_lifecycle_guidelines.md`
+    * `logging_procedures_guidelines.md`
+    * `llm_handover_procedures.md`
+    * `history/progress/user_profile_for_llm_assistance.md`
+2.  **Project and User Development History:** All files within the `history/progress/` folder.
+3.  **Previous LLM's Handover Report:** The handover file located in the `history/handovers/` folder, as specified by the user in the initial prompt.
 
 ## 4. Your Workflow and Future Handover Responsibilities
 
-1.  **Adherence to Standards:** Throughout your work on this project, you are expected to strictly adhere to all coding, naming, and documentation standards specified in `documentation/standards.md`.
-2.  **Diligent Logging:** Regularly and accurately log all significant steps, decisions, and progress in `llm_assisted_development_log.md` and `user_progress_log.md`, following the guidelines in `documentation/logging_procedures_guidelines.md`.
-3.  **Preparing for Future Handover:**
-    *   Should the user request you to hand over the project, you must follow the detailed procedures outlined in the `documentation/llm_handover_procedures.md` document.
-    *   **Crucially, before initiating any handover steps, your first action must be to re-read the `documentation/llm_handover_procedures.md` file to ensure you are following the most current version of the handover protocol, as it may have been updated since your takeover.**
-
-I hope this guide helps you successfully take over the project. Please let me know if you encounter any issues or have any questions.
+* **Adherence to Standards:** You are expected to strictly adhere to all standards and procedures defined in the documentation.
+* **Diligent Logging:** Regularly and accurately log all significant progress as per the `logging_procedures_guidelines.md`.
+* **Preparing for Future Handover:** Should the user request you to hand over the project ("Projeyi devret"), you **must** follow the procedures outlined in `documentation/llm_handover_procedures.md`. Your first action upon receiving that command must be to re-read that file to ensure you are following the most current protocol.
