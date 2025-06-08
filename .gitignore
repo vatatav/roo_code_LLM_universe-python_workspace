@@ -134,9 +134,9 @@ projects/*/logs/
 projects/*/*/logs/
 
 # History folders (project logs, handover files, etc. - not version controlled)
-history/
-projects/*/history/
-projects/*/History/ # Covers specific deviations like financial_tracker/History
+# history/
+# history/handovers/
+# history/takeovers/
 # Add any other sensitive or temporary files specific to your projects here
 # For example, if financial_tracker creates other temporary data:
 # projects/financial_tracker/data/processed_text/*.txt

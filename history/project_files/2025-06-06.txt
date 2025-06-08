@@ -1,0 +1,122 @@
+﻿
+
+    Directory: D:\AI_projects\roo_code_LLM_universe\python_workspace
+
+
+Mode          LastWriteTime Length Name           
+----          ------------- ------ ----           
+d-----  6.06.2025     02:37        documentation  
+d-----  3.06.2025     03:09        history        
+d----- 23.05.2025     20:32        projects       
+d----- 28.05.2025     20:11        shared_libs    
+-a----  5.06.2025     23:18  16018 2025-06-05.txt 
+-a----  6.06.2025     02:40      0 2025-06-06.txt 
+-a----  5.06.2025     23:07   8151 20250506.txt   
+-a----  5.06.2025     23:20   8206 20250605.txt   
+-a----  4.06.2025     14:17  21152 dir20250604.txt
+-a----  6.06.2025     00:25    869 list_files.bat 
+-a----  6.06.2025     00:24    830 list_files.ps1 
+-a---- 23.05.2025     21:35   2998 README.md      
+
+
+    Directory: D:\AI_projects\roo_code_LLM_universe\python_workspace\documentation
+
+
+Mode          LastWriteTime Length Name                            
+----          ------------- ------ ----                            
+-a----  3.06.2025     20:54   8477 llm_handover_procedures.md      
+-a----  6.06.2025     02:10   5063 llm_takeover_procedures.md      
+-a----  3.06.2025     16:53    729 llm_takeover_prompt.txt         
+-a----  3.06.2025     16:22   9582 logging_procedures_guidelines.md
+-a---- 31.05.2025     02:15   7503 project_lifecycle_guidelines.md 
+-a---- 23.05.2025     21:40  15886 standards.md                    
+
+
+    Directory: D:\AI_projects\roo_code_LLM_universe\python_workspace\history
+
+
+Mode          LastWriteTime Length Name     
+----          ------------- ------ ----     
+d-----  3.06.2025     20:58        handovers
+d-----  5.06.2025     13:29        progress 
+d-----  3.06.2025     03:09        takeovers
+
+
+    Directory: D:\AI_projects\roo_code_LLM_universe\python_workspace\history\handovers
+
+
+Mode          LastWriteTime Length Name                                                      
+----          ------------- ------ ----                                                      
+d-----  3.06.2025     02:09        OLD                                                       
+-a----  2.06.2025     18:17   5539 HandOver-20250603-VSCode-Extension-Agent.md               
+-a----  3.06.2025     23:03   6304 HandOver_20250603_CodeLLM-Agent_Gemini-2.5-Pro_20250603.md
+
+
+    Directory: D:\AI_projects\roo_code_LLM_universe\python_workspace\history\handovers\OLD
+
+
+Mode          LastWriteTime Length Name                                       
+----          ------------- ------ ----                                       
+-a----  2.06.2025     18:17   5539 HandOver-20250603-VSCode-Extension-Agent.md
+
+
+    Directory: D:\AI_projects\roo_code_LLM_universe\python_workspace\history\progress
+
+
+Mode          LastWriteTime Length Name                              
+----          ------------- ------ ----                              
+-a----  5.06.2025     13:33  34006 llm_assisted_development_log.md   
+-a----  3.06.2025     19:48   8302 user_profile_for_llm_assistance.md
+-a----  5.06.2025     13:34  35908 user_progress_log.md              
+
+
+    Directory: D:\AI_projects\roo_code_LLM_universe\python_workspace\history\takeovers
+
+
+Mode          LastWriteTime Length Name                                             
+----          ------------- ------ ----                                             
+-a----  3.06.2025     03:20   4040 TakeOver_20250603_CodeLLM-Agent_Gemini-2.5-Pro.md
+
+
+    Directory: D:\AI_projects\roo_code_LLM_universe\python_workspace\projects
+
+
+Mode          LastWriteTime Length Name             
+----          ------------- ------ ----             
+d-----  2.06.2025     20:55        financial_tracker
+
+
+    Directory: D:\AI_projects\roo_code_LLM_universe\python_workspace\projects\financial_tracker
+
+
+Mode          LastWriteTime Length Name   
+----          ------------- ------ ----   
+d-----  2.06.2025     20:55        History
+d----- 31.05.2025     02:35        src    
+
+
+    Directory: D:\AI_projects\roo_code_LLM_universe\python_workspace\projects\financial_tracker\History
+
+
+Mode          LastWriteTime Length Name                           
+----          ------------- ------ ----                           
+-a----  1.06.2025     14:00 169757 Preparation_of_first_prompt.txt
+-a----  1.06.2025     02:30 368044 roo_code_LLM.md                
+
+
+    Directory: D:\AI_projects\roo_code_LLM_universe\python_workspace\projects\financial_tracker\src
+
+
+Mode          LastWriteTime Length Name                
+----          ------------- ------ ----                
+-a---- 31.05.2025     02:43   1175 temp_test_tooling.py
+
+
+    Directory: D:\AI_projects\roo_code_LLM_universe\python_workspace\shared_libs
+
+
+Mode          LastWriteTime Length Name       
+----          ------------- ------ ----       
+-a---- 23.05.2025     20:32      0 __init__.py
+
+
