@@ -17,21 +17,26 @@ Upon receiving the initial prompt from the user, you must perform the following 
     * Read and process this document (`llm_takeover_procedures.md`) in its entirety.
     * Read and process all other core project documentation as listed in the "Required Reading" section below.
 
-2.  **Verify Takeover Parameters:**
+2.  **Verify Previous Session Finalization:**
+    * Locate the `HandOver...md` file from the previous LLM (its name will be in your initial prompt).
+    * Check if this file contains a final section with the `git push` output (e.g., "Finalizing Commit Details").
+    * **If this section is missing, you must halt the takeover process.** Inform the user that the previous session does not appear to have been correctly finalized and pushed to the remote repository. Request that the user resolve this before you can safely proceed.
+
+3.  **Verify Takeover Parameters:**
     * Before proceeding, perform a sanity check on the session-specific information you received in the initial prompt from the user.
     * Does the `Session Start Date` appear logical in sequence with the date of the file mentioned in `Previous LLM's Handover File Name`?
     * Is the `Mode` or `LLM Model Used` a name that has appeared before in the project logs, or does it appear to be new?
     * If you detect any potential inconsistencies (e.g., a date that seems out of order, a new model name that could be a typo), you **must** ask the user for clarification before proceeding. For example: *"I have noted the `LLM Model Used` is 'NewModel-X'. Is this a new model identifier we are now tracking, or could it be a typo?"*
 
-3.  **Summarize Your Understanding:**
+4.  **Summarize Your Understanding:**
     * After reviewing all required documents, prepare a summary of your understanding of the project's current status, completed work, ongoing tasks, and overall objectives.
     * Present this summary to the user.
 
-4.  **Propose a Continuation Plan:**
+5.  **Propose a Continuation Plan:**
     * Based on your analysis, outline how you plan to proceed and what your initial steps will be.
     * Present this plan to the user for discussion and approval.
 
-5.  **Create "TakeOver" File and Log Entries:**
+6.  **Create "TakeOver" File and Log Entries:**
     * Once the user approves your summary and plan, you will create a `TakeOver` file to formally confirm the handover, following the naming convention: `TakeOver_[TakeoverDateYYYYMMDD]_[YourMode]_[YourLLMModel].md`.
     * This file should be saved in the `history/takeovers/` folder. Its content should be the summary and plan we agreed upon.
     * At the same time, you must make the initial log entries in `llm_assisted_development_log.md` and `user_progress_log.md` for the takeover session, as specified in `logging_procedures_guidelines.md`.

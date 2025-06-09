@@ -682,3 +682,14 @@
 * Created the final piece of workflow documentation, `workflow_guide.md`.
 * Successfully managed a difficult LLM interaction to produce an accurate handover report, providing a clean slate for the next phase of development.
 ---
+********************************************************************************
+**UPL-20250608 Session Start:** 2025.06.08 22:40
+---
+1.  **Topic:** `Correcting LLM and Refining Procedures`
+    -   **Insights & Learnings:** User identified multiple LLM errors (language, incorrect file assumptions, flawed logic). User provided detailed guidance to correct the course and establish more robust procedures for Git verification, recognizing the limitations of web-based LLMs.
+2.  **Topic:** `Establishing Core LLM Interaction Rules`
+    -   **Insights & Learnings:** User diagnosed a fundamental flaw in the LLM's approach—rewriting documents instead of amending them. To solve this systemically, the user conceived of and directed the creation of `llm_interaction_rules.md`, a critical new document for ensuring future LLM compliance and preserving project integrity.
+3.  **Topic:** `Managing LLM Context Failure and Finalizing Handover`
+    -   **Insights & Learnings:** User decided to terminate the session due to the LLM's repeated inability to retain context from the initial prompt. The user had to provide final corrections on session dates, commit message standards, and future procedural tasks, while also managing the LLM's confusion about its own actions and the state of the project files. This session underscored the high level of vigilance required to manage the current state of LLM assistants.
+**UPL-20250608 Session End:** 2025.06.10 00:43
+---
