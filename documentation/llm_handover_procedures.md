@@ -127,7 +127,28 @@ Compile a comprehensive **Draft Handover Report**. This report should include:
         ```
 5.  **Prompt User for Final Git Actions:** 
     * Remind the user that all documentation, code is now prepared and that they should perform the final `git add .`, `git commit`, and `git push` commands to save the state of the project and make it available to the next LLM.
-    *  Propose a final Git commit message to the user (e.g., "docs: Finalize session work and prepare for LLM handover"). 
+    * **Propose a structured Git Commit Message.** The LLM must propose a well-structured commit message to the user for approval. This message must follow the Conventional Commits specification and include a session tag.
+        * **Structure:** The commit message should be formatted as follows:
+            ```
+            type(scope): subject (YYYYMMDD)
+
+            - A bullet point summarizing the first key change.
+            - A bullet point summarizing the second key change.
+            - Additional bullet points as needed.
+            ```
+        * **Components:**
+            * `type`: Describes the kind of change (e.g., `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`).
+            * `scope`: The part of the project affected (e.g., `procedures`, `financial_tracker`, `logging`).
+            * `subject`: A concise, imperative-mood summary of the changes.
+            * `(YYYYMMDD)`: The 8-digit date of the session being finalized.
+            * **Body:** A detailed, bulleted list explaining the most important changes made during the session.
+        * **Example:**
+            ```
+            docs(procedures): Enhance handover and logging rules (20250610)
+
+            - Adds guidelines to handover procedure for creating structured Git commits.
+            - Updates takeover procedure to require immediate creation of the session's first log entry.
+            ```
     * Inform them that you will await their output from these commands for the final step.
 6.  **Append Final Commit Details (Conditional Task):**
     * This task is triggered only when the user provides the output of the `git push` command.

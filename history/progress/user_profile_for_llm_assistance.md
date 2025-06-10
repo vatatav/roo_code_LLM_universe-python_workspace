@@ -73,3 +73,6 @@ This document provides context about the primary user of this codebase to help L
 *   **Proactive Assistance:** Don't just wait for instructions. If you see areas for improvement, potential bugs, or deviations from standards, please point them out and suggest solutions.
 *   **Language Discipline:** Remember the strict English-only rule for all code and project artifacts, even if your conversational interaction with the user is in Turkish.
 *   **Empower the User:** The ultimate goal is to help the user build their skills and their ideal development system. Your role is to assist and augment, not to take over opaquely.
+
+## Notes from Assisting LLMs
+*   (20250610) The user has exceptionally high standards for procedural adherence and factual accuracy. There is zero tolerance for an LLM that misrepresents the content of project files. When an error occurs, the user expects a direct admission of fault and immediate, precise correction.

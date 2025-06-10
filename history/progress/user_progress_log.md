@@ -692,4 +692,14 @@
 3.  **Topic:** `Managing LLM Context Failure and Finalizing Handover`
     -   **Insights & Learnings:** User decided to terminate the session due to the LLM's repeated inability to retain context from the initial prompt. The user had to provide final corrections on session dates, commit message standards, and future procedural tasks, while also managing the LLM's confusion about its own actions and the state of the project files. This session underscored the high level of vigilance required to manage the current state of LLM assistants.
 **UPL-20250608 Session End:** 2025.06.10 00:43
+********************************************************************************
+---
+**UPL-20250610 Session Start:** 10.06.2025 16:04
+**Topic:** Handover due to LLM Procedural Failure
+**Insights & Learnings:**
+* Confirmed that even with explicit rules, current web-based LLMs can fail to adhere to them, requiring vigilance.
+* The project's procedural framework, particularly the handover process, serves as a critical fail-safe against a malfunctioning or non-compliant LLM.
+* Identified a need to make rules even more explicit (e.g., grounding statements in fact) and to clarify the LLM's operational context (e.g., pre-loaded files).
+* The process of correcting the LLM led to valuable, permanent improvements in the project's documentation.
+**UPL-20250610 Session End:** 10.06.2025 20:30
 ---

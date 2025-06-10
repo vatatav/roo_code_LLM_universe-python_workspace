@@ -40,7 +40,7 @@ Upon receiving the initial prompt from the user, you must perform the following 
     * Once the user approves your summary and plan, you will create a `TakeOver` file to formally confirm the handover, following the naming convention: `TakeOver_[TakeoverDateYYYYMMDD]_[YourMode]_[YourLLMModel].md`.
     * This file should be saved in the `history/takeovers/` folder. Its content should be the summary and plan we agreed upon.
     * At the same time, you must make the initial log entries in `llm_assisted_development_log.md` and `user_progress_log.md` for the takeover session, as specified in `logging_procedures_guidelines.md`.
-
+    * Ensure that both the `TakeOver` file and the initial log entries are accurate, complete, and adhere to the project's documentation and logging standards.
 ## 3. Required Reading to Understand the Project
 
 To fully understand the project, you must review the following resources:

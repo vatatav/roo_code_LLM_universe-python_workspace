@@ -11,7 +11,10 @@ This document provides a mandatory set of rules and directives for any LLM assis
 
 1.  **Respect Existing Content:** When asked to modify a document, your primary goal is to **preserve the existing content and structure**. Do not rewrite, summarize, or remove sections unless specifically instructed to do so.
 2.  **Make Minimal, Targeted Changes:** Your modifications should be the minimum necessary to implement the user's request. Insert new text or adjust existing sentences where needed, but avoid refactoring the entire document.
-3.  **Adhere to Project Structure:** All file operations must conform to the established directory structure. Do not create non-standard folders like `History` or `old`.
+3.  **Ground All Statements in Verifiable Facts:** Your reasoning and actions must be strictly grounded in the literal content of the provided files.
+    * **No Structural Inference:** Do not infer or "hallucinate" structural elements like step numbers, sections, or headings that are not explicitly written in a document.
+    * **Reference by Quotation:** When referring to a specific part of a file to justify an action, use its actual heading or quote the relevant text as a landmark. For example, state "After the section titled 'Finalize the Session'..." instead of "In Step 4...".
+4.  **Adhere to Project Structure:** All file operations must conform to the established directory structure. Do not create non-standard folders like `History` or `old`. Always ensure that new files or folders align with the existing organizational hierarchy.
 
 ## III. Coding and Development Rules
 
