@@ -703,3 +703,53 @@
 * The process of correcting the LLM led to valuable, permanent improvements in the project's documentation.
 **UPL-20250610 Session End:** 10.06.2025 20:30
 ---
+********************************************************************************
+**S10-UPL-20250611 Session Start:** 2025.06.11 21:30
+**Session Goals:** Refine and formalize project procedures for logging and takeover.
+**Date added to log:** 2025.06.12
+**Mode:** Gemini Web Interface
+**LLM Model:** Gemini 2.5 Pro (preview)
+**Source:** Ongoing Conversation
+
+**ItemID:** S10-UPL-20250611-001
+**Date Interval:** 2025.06.11 21:30 - 2025.06.12 19:46
+**Topic:** Establishing and Applying New Logging and Takeover Procedures
+**Insights & Learnings:**
+* Decided that the existing `llm_takeover_prompt_WEB.md` is no longer fully accurate because the `history` folder is now tracked by Git.
+* Defined a clearer, more immediate workflow for session logging: the LLM must propose the initial log entry for approval as the first action after session goals are agreed upon.
+* Solidified the log entry format to include a session number prefix (e.g., `S10-`) for easier tracking of the total number of sessions.
+**Challenges & Solutions:**
+* Challenge: The previous, more rigid plan (document first, act later) was inefficient.
+* Solution: Instructed the LLM to adopt a more agile approach by immediately applying the new rules we had just discussed.
+**Related Development Log Entry:** S10-ADL-20250611-001
+---
+**ItemID:** S10-UPL-20250611-002
+**Date Interval:** 2025.06.12 - 2025.06.13
+**Topic:** Managing Critical LLM Failure
+**Insights & Learnings:**
+* Confirmed that even advanced LLMs can get stuck in a failure loop, particularly with tasks requiring precise, full-file manipulation.
+* The "test" of asking the LLM to provide a full file after a change is a vital check of its capabilities.
+* Manually correcting the file was necessary after the LLM's repeated failures.
+**Challenges & Solutions:**
+* Challenge: The LLM repeatedly failed to generate the complete `logging_procedures_guidelines.md` file, providing truncated versions.
+* Solution: Terminated the session after concluding the LLM could not recover from its failure loop.
+**Related Development Log Entry:** S10-ADL-20250611-002
+---
+**ItemID:** S10-UPL-20250611-003
+**Date Interval:** 2025.06.12
+**Topic:** Improving Meta-Interaction Rules
+**Insights & Learnings:**
+* The experience highlighted the need for an explicit rule about how LLMs should present deliverables.
+* Agreed that a new rule should be added to `llm_interaction_rules.md` to require the full text of a file to be provided post-approval.
+**Challenges & Solutions:**
+* Challenge: The LLM's default behavior was to provide only a summary of changes, which was inefficient and hid critical errors.
+* Solution: Proposed codifying the desired behavior into a new rule for future sessions.
+**Related Development Log Entry:** S10-ADL-20250611-003
+---
+**S10-UPL-20250611 Session End:** 2025.06.13
+**Total Items in Session:** 3
+**Session Highlights:**
+* Finalized the new logging procedure, but implementation was blocked by LLM failures.
+* Identified a critical failure point in LLM file generation and proposed a new interaction rule to mitigate it.
+* Terminated the session to maintain project momentum.
+---

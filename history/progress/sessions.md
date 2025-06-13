@@ -71,3 +71,21 @@ Mode: Gemini Web Interface
 LLM Model: Gemini 2.5 Pro (preview)
 Source: "Ongoing Conversation (S08_20250608_Gemini-Web-Interface_Gemini-2.5-Pro-preview.md)"
 Total Items in Session: 11
+
+9. ADL-20250610
+Date Interval: 2025.06.10 16:04 - 2025.06.10 20:30
+Reason: Refine handover/takeover procedures.
+Date added to log: 2025.06.10
+Mode: Gemini Web Interface
+LLM Model: Gemini 2.5 Pro (preview)
+Source: "Ongoing Conversation (S09_20250610_Gemini-Web-Interface_Gemini-2.5-Pro-preview.md)"
+Total Items in Session: 7
+
+10. ADL-20250611
+Date Interval: 2025.06.11 21:30 - 2025.06.13 13:56
+Reason: Refine logging and takeover procedures. The session was terminated due to repeated LLM failure in file generation tasks.
+Date added to log: 2025.06.13
+Mode: Gemini Web Interface
+LLM Model: Gemini 2.5 Pro (preview)
+Source: "Ongoing Conversation (S10_20250611_Gemini-Web-Interface_Gemini-2.5-Pro-preview.md)"
+Total Items in Session: 3

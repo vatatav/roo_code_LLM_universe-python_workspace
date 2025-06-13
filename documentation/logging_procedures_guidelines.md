@@ -3,29 +3,39 @@
 ## 1. Introduction
 
 This document outlines the procedures and conventions for maintaining two critical log files:
-*   `llm_assisted_development_log.md`: Tracks the development activities, LLM interactions, and decisions made during the software development process.
-*   `user_progress_log.md`: Records the user's learning journey, insights gained, challenges faced, and solutions implemented while working with LLMs.
+* `llm_assisted_development_log.md`: Tracks the development activities, LLM interactions, and decisions made during the software development process.
+* `user_progress_log.md`: Records the user's learning journey, insights gained, challenges faced, and solutions implemented while working with LLMs.
 
 Adherence to these guidelines is crucial for ensuring consistency, traceability, and effective handover between different LLM agents or human reviewers involved in this project.
 
 ## 2. Log File Location
 
-Both log files are located in the `python_workspace/documentation/` directory.
+Both log files are located in the `history/progress/` directory.
 
 ## 3. General Log Structure
 
-*   **Session-Based:** Logs are organized into sessions, where each session represents a distinct period of interaction or work.
-*   **Chronological Order:** Sessions within each log file **must** be ordered chronologically based on the `Session Start` date. The newest sessions are added at the end of the file.
-*   **Visual Separator:** Each new session must begin with a visual separator of 80 asterisks:
+* **Session-Based:** Logs are organized into sessions, where each session represents a distinct period of interaction or work.
+* **Chronological Order:** Sessions within each log file **must** be ordered chronologically based on the `Session Start` date. The newest sessions are added at the end of the file.
+* **Visual Separator:** Each new session must begin with a visual separator of 80 asterisks:
     ```
     ********************************************************************************
     ```
+
+### 3.5 Initial Session Logging Procedure
+
+To ensure consistency from the very beginning of a session, the following procedure is mandatory:
+
+1.  **Determine Session Number:** At the start of a new session, the assisting LLM must first consult `history/progress/sessions.md` to determine the correct sequential session number (e.g., S10, S11).
+2.  **Agree on Session Goals:** The LLM and user will discuss and agree upon the primary goals for the session.
+3.  **Propose Initial Log Entries:** Immediately after the goals are set, the LLM's **first action** must be to formulate the initial, corresponding session start entries (for both `llm_assisted_development_log.md` and `user_progress_log.md`) according to the format specified in Section 4.
+4.  **Obtain User Approval:** The LLM must present these proposed log entries to the user and receive explicit approval before proceeding with any other development tasks.
 
 ## 4. Session Header Fields
 
 Each session must start with the following header fields:
 
-*   `**[LOG_PREFIX]-YYYYMMDD Session Start:** YYYY.MM.DD`
+* `**S<XX>-[LOG_PREFIX]-YYYYMMDD Session Start:** YYYY.MM.DD HH:MM`
+    * `S<XX>` is the sequential session number (e.g., S10) determined by consulting `history/progress/sessions.md`.
     *   `[LOG_PREFIX]` is `ADL` for `llm_assisted_development_log.md` and `UPL` for `user_progress_log.md`.
     *   `YYYYMMDD` in the label should match the `Session Start` date.
     *   Example: `**ADL-20250507 Session Start:** 2025.05.07`

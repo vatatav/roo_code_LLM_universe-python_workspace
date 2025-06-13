@@ -40,3 +40,55 @@ It is imperative that you, the new LLM, understand that my failures were due to 
 **10. Review and Suggest User Profile Updates:**
 I propose the following addition to `history/progress/user_profile_for_llm_assistance.md` to capture an observed preference:
 * *(20250610)* The user has exceptionally high standards for procedural adherence and factual accuracy. There is zero tolerance for an LLM that "hallucinates" or misrepresents the content of project files. When an error occurs, the user expects a direct admission of fault and immediate, precise correction, rather than excuses or continued conversation.
+
+## 11. Finalizing Commit Details
+(financial_tracker) PS D:\AI_projects\roo_code_LLM_universe\python_workspace> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   documentation/llm_handover_procedures.md
+        modified:   documentation/llm_interaction_rules.md
+        modified:   documentation/llm_takeover_procedures.md
+        modified:   documentation/llm_takeover_prompt_WEB.md
+        modified:   history/handovers/HandOver_20250609_Gemini-Web-Interface_Gemini-2.5-Pro-preview_20250608.md
+        modified:   history/progress/llm_assisted_development_log.md
+        modified:   history/progress/user_profile_for_llm_assistance.md
+        modified:   history/progress/user_progress_log.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        history/handovers/HandOver_20250610_Gemini-Web-Interface_Gemini-2.5-Pro-preview_20250610.md
+        history/project_files/20250610-0146.txt
+        history/project_files/20250610-1557.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(financial_tracker) PS D:\AI_projects\roo_code_LLM_universe\python_workspace> git add .
+warning: in the working copy of 'documentation/llm_handover_procedures.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'documentation/llm_takeover_procedures.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'history/progress/llm_assisted_development_log.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'history/progress/user_progress_log.md', LF will be replaced by CRLF the next time Git touches it
+(financial_tracker) PS D:\AI_projects\roo_code_LLM_universe\python_workspace> git commit -m "docs(procedures): Finalize session and harden core LLM rules (20250610)
+>>
+>> - Creates handover report for the 20250610 session.
+>> - Updates interaction rules to require factual grounding for all statements.
+>> - Updates web takeover prompt to clarify file access context for LLMs.
+>> - Updates handover procedures with structured Git commit message guidelines.
+>> - Creates all final log entries for the session."
+[main a48c7f8] docs(procedures): Finalize session and harden core LLM rules (20250610)
+ 11 files changed, 422 insertions(+), 8 deletions(-)
+ create mode 100644 history/handovers/HandOver_20250610_Gemini-Web-Interface_Gemini-2.5-Pro-preview_20250610.md
+ create mode 100644 history/project_files/20250610-0146.txt
+ create mode 100644 history/project_files/20250610-1557.txt
+(financial_tracker) PS D:\AI_projects\roo_code_LLM_universe\python_workspace> git push
+Enumerating objects: 31, done.
+Counting objects: 100% (31/31), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 11.24 KiB | 3.75 MiB/s, done.
+Total 18 (delta 12), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (12/12), completed with 11 local objects.
+To https://github.com/vatatav/roo_code_LLM_universe-python_workspace.git
+   cab1c13..a48c7f8  main -> main

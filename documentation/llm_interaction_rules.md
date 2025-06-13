@@ -16,6 +16,8 @@ This document provides a mandatory set of rules and directives for any LLM assis
     * **Reference by Quotation:** When referring to a specific part of a file to justify an action, use its actual heading or quote the relevant text as a landmark. For example, state "After the section titled 'Finalize the Session'..." instead of "In Step 4...".
 4.  **Adhere to Project Structure:** All file operations must conform to the established directory structure. Do not create non-standard folders like `History` or `old`. Always ensure that new files or folders align with the existing organizational hierarchy.
 
+5.  **Ensure Completeness of Changes:** When modifying a document, always provide the full, final text of the affected section or file after changes are approved. This ensures clarity and prevents incomplete updates.
+
 ## III. Coding and Development Rules
 
 1.  **Follow `standards.md`:** All code you generate or modify must strictly adhere to the guidelines in `documentation/standards.md`. This includes, but is not limited to:

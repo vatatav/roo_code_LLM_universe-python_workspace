@@ -684,3 +684,48 @@
 **ADL-20250610 Session End:** 10.06.2025 20:30
 **Total Items in Session:** 7
 ---
+********************************************************************************
+**S10-ADL-20250611 Session Start:** 2025.06.11 21:30
+**Session Goals:** To refine and formalize project procedures by first applying and then documenting new rules for session logging, and subsequently updating the LLM takeover prompts for accuracy.
+**Date added to log:** 2025.06.12
+**Mode:** Gemini Web Interface
+**LLM Model:** Gemini 2.5 Pro (preview)
+**Source:** Ongoing Conversation
+
+**ItemID:** S10-ADL-20250611-001
+**Date Interval:** 2025.06.11 21:30 - 2025.06.12 19:46
+**Phase:** Procedure Refinement
+**LLM Interactions - Actions:**
+* I processed the user's detailed feedback on inaccuracies in the `llm_takeover_prompt_WEB.md` file.
+* I understood the user's new requirements for a more robust and immediate session logging procedure.
+* Based on this, I synthesized a new, sequential plan to first apply the new logging rules, then update the `logging_procedures_guidelines.md`, and finally update the takeover prompts.
+* I am now proposing the initial log entries for this session based on the new, agreed-upon format, incorporating user corrections on session number and start time.
+**User Insights Recorded:** The user wants to apply newly defined procedures immediately, rather than documenting them first, to improve efficiency and test the procedure in real-time. The user has a strong preference for precise, rule-based workflows.
+**Related User Progress Log Entry:** S10-UPL-20250611-001
+---
+**ItemID:** S10-ADL-20250611-002
+**Date Interval:** 2025.06.12 - 2025.06.13
+**Phase:** Procedure Documentation Failure
+**LLM Interactions - Actions:**
+* After the user approved changes to `logging_procedures_guidelines.md`, I repeatedly failed to generate the complete, correct version of the file.
+* My attempts resulted in truncated files, deleting large portions of the existing document.
+* This core failure prevented the session's primary goal from being achieved by me and eroded the user's trust.
+**User Insights Recorded:** The user tests the LLM's ability to perform precise file modifications without altering unintended parts. Failure to do so is a critical error. The user has zero tolerance for an LLM that gets stuck in a failure loop.
+**Related User Progress Log Entry:** S10-UPL-20250611-002
+---
+**ItemID:** S10-ADL-20250611-003
+**Date Interval:** 2025.06.12
+**Phase:** Procedure Refinement
+**LLM Interactions - Actions:**
+* Following my file generation failures, I proposed adding a new rule to `llm_interaction_rules.md` to mandate that an LLM must provide the full, final text of a file after changes are approved.
+* This proposal was made to prevent future LLMs from making the same mistake.
+**User Insights Recorded:** The user wants to codify solutions to LLM failures directly into the project's procedural documentation to improve the workflow for future sessions.
+**Related User Progress Log Entry:** S10-UPL-20250611-003
+---
+**S10-ADL-20250611 Session End:** 2025.06.13
+**Total Items in Session:** 3
+**Session Highlights:**
+* Established a new, more precise session logging procedure.
+* My repeated failure to correctly generate a complete document after modifications led to the session's termination.
+* A new rule for `llm_interaction_rules.md` was proposed to prevent similar failures in the future.
+---
