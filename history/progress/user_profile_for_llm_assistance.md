@@ -76,3 +76,5 @@ This document provides context about the primary user of this codebase to help L
 
 ## Notes from Assisting LLMs
 *   (20250610) The user has exceptionally high standards for procedural adherence and factual accuracy. There is zero tolerance for an LLM that misrepresents the content of project files. When an error occurs, the user expects a direct admission of fault and immediate, precise correction.
+
+*   (20250613) The user has a very low tolerance for conceptual misunderstandings. An LLM's failure to correctly integrate a core logical rule after it has been discussed is grounds for session termination.
