@@ -28,35 +28,31 @@ The behavior of the entire framework for a given session is defined by a user-pr
 
 ### Tier 1: The Session Runner
 
--   **Agent Name:** `Dispatcher Agent` (Yönlendirici)
--   **Purpose:** The central controller. Its core responsibilities are:
-    1.  To acquire the **Session Configuration** from the user at startup.
-    2.  To act as the primary user interface, managing the main control loop.
-    3.  To delegate all tasks to other agents based on the rules defined in the current Session Configuration.
+-   **Agent Name:** `Dispatcher Agent` (Central Controller)
+-   **Purpose:** The central controller. Its core responsibilities are to acquire the Session Configuration, manage the main control loop, and delegate all tasks. It also handles administrative duties.
 -   **LLM Tier:** **Low-Cost / High-Speed.**
 -   **Tool Access:** Possesses `log` and `git` permissions to handle administrative tasks (like logging session phases or committing work) as directed by the workflow.
 
 ### Tier 2: The Specialist Planner
 
 -   **Agent Name:** `Planner Agent`
--   **Purpose:** A specialized, advisory agent used for complex problem-solving. It is a stateless tool called by the `Dispatcher`.
--   **Workflow:**
-    1.  Receives a single complex goal from the `Dispatcher`.
-    2.  Its **sole output** is a structured, step-by-step plan to achieve that goal.
-    3.  The plan **must** include a recommendation for which Tier 3 worker agent is best suited for each step.
+-   **Purpose:** A specialized, advisory agent used for complex problem-solving. Its sole output is a structured, step-by-step plan which it returns to the `Dispatcher`.
 -   **LLM Tier:** **High-Reasoning / High-Capability**.
--   **Tool Access:** **None.** It is a pure reasoning engine. All context it needs must be provided by the `Dispatcher`.
+-   **Tool Access:** **None.** It is a pure reasoning engine.
 
 ### Tier 3: Generic Worker Agents
 
 These are single-purpose tools that receive a task and all necessary context from the `Dispatcher`. They are stateless.
--   **`Takeover & Handover Agent`**: A low-cost, procedural agent responsible for executing the session start (takeover) and session end (handover) workflows. Its behavior is strictly governed by the procedure documents (e.g., `llm_takeover_procedures.md`) whose paths are provided by the `Dispatcher` based on the current session configuration. It has limited tool access (read/write) to perform its duties.
+-   **`Takeover & Handover Agent`**: A low-cost, procedural agent responsible for executing session start and end workflows.
+    -   **Tool Access**: Has direct `read` and `write` access to perform its duties as defined in the procedure documents provided by the `Dispatcher`.
 -   **`Developer Agents (Tiered)`**
-    -   **`Junior Developer Agent`**: Uses a low-cost, fast model. Best for simple, repetitive, or boilerplate tasks with very specific instructions (e.g., "Fix this syntax error," "Add a getter for this property").
-    -   **`Developer Agent`**: Uses a mid-tier model. The default choice for standard, well-defined feature work, bug fixes, and implementing steps from a plan.
-    -   **`Senior Developer Agent`**: Uses a high-capability model. Reserved for tasks requiring deep reasoning, such as designing complex algorithms, refactoring core architecture, or debugging subtle issues.
--   **`QA / Verifier Agent`**: A specialized agent responsible for quality control. It is called as an explicit step in a plan to check the output of another agent against a given set of rules, standards, or acceptance criteria. Its purpose is to catch procedural errors, logical flaws, or deviations from project standards.
--   **`Documentation Agent`**: A mid-tier agent specialized in generating, updating, and maintaining documentation. It can be tasked with writing docstrings for code, updating `README.md` files, or summarizing changes for release notes. It should be able to read code but have limited write access, primarily to markdown files.
+    -   **`Junior Developer Agent`**: A low-cost model for simple, boilerplate tasks. Has `read` and `edit` access.
+    -   **`Developer Agent`**: A mid-tier model for standard feature work. Has `read` and `edit` access.
+    -   **`Senior Developer Agent`**: A high-capability model for complex logic and architecture. Has `read` and `edit` access.
+-   **`QA / Verifier Agent`**: A specialized agent for quality control, checking agent output against a set of rules.
+    -   **Tool Access**: Has `read` access to examine files and compare them against standards.
+-   **`Documentation Agent`**: A mid-tier agent specialized in generating and updating documentation.
+    -   **Tool Access**: Has `read` access to understand code and `edit` access limited to markdown files.
 
 ## 5. The Dynamic Workflow in Action
 
