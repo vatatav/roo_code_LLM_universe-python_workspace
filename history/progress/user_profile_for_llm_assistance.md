@@ -80,3 +80,9 @@ This document provides context about the primary user of this codebase to help L
 *   (20250613) The user has a very low tolerance for conceptual misunderstandings. An LLM's failure to correctly integrate a core logical rule after it has been discussed is grounds for session termination.
 
 *   (20250616) The user is highly effective at guiding the design process and has a very low tolerance for procedural errors or LLM failures related to context tracking and precise file modification. The LLM must be able to follow multi-step interaction protocols (e.g., "plan first, then execute") reliably and consistently.
+
+*   (20250619) The user has a very high standard for the correctness of generated scripts and tools. A script that requires multiple user-led debugging cycles to fix fundamental issues (e.g., pathing, module resolution, platform compatibility) is considered a failure. The LLM is expected to deliver code that works based on the provided context and requirements.
+
+*   (20250619) The user's definition of "success" for a task is high. A partially working solution (e.g., an unordered data file) is seen as a milestone, but not a completed task if the original goal included a higher level of quality (e.g., logical ordering). The user will pivot a session to a meta-task (like documentation or process refinement) if a technical task becomes a frustrating loop of failures, viewing the analysis of the failure as a more productive outcome.
+
+*   (20250621) The user has an extremely high sensitivity to **regression errors** introduced by an LLM. If a new instruction or feature request results in the LLM providing a solution that breaks previously established and working logic, the user will consider it a critical failure and a primary trigger for session termination and handover. The LLM must prioritize preserving working functionality when making modifications.
